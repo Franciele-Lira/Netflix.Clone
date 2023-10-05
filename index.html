@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
+
+    <!--- Link do bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/png">
+
 </head>
 <body>
     <header>
@@ -14,11 +19,11 @@
         <ul class="navigation">
             <li><a href="#">Perfil</a></li>
             <li><a href="#">Home</a></li>
-            <li><a href="http://127.0.0.1:5500/Clone.Netflix-main/Filmes/filmes.html">Filmes</a></li>
-            <li><a href="#">Séries</a></li>
-            <li><a href="http://127.0.0.1:5500/Clone.Netflix-main/Minha_Lista/lista.html#">Minha Lista</a></li>
+            <li><a href="Filmes/filmes.html">Filmes</a></li> 
+            <li><a href="Séries/serie.html">Séries</a></li>
+            <li><a href="">Minha Lista</a></li>
         </ul>
-        <div class="search">
+        <div class="Pesquisar">
             <input type="text" placeholder="Search">
             <i class="fas fa-search"></i>
 
@@ -40,7 +45,7 @@
             <p> &copy; Franciele Lira</p>
             <div class="buttons">
                 <a href="#"><i class="fa fa-play" aria-hidden="true"></i>Play</a>
-                <a href="http://127.0.0.1:5500/Clone.Netflix-main/Minha_Lista/lista.html#"><i class="fa fa-plus" aria-hidden="true"></i>Minha Lista</a>
+                <a href="http://Clone.Netflix-main/Minha_Lista/lista.html#"><i class="fa fa-plus" aria-hidden="true"></i>Minha Lista</a>
             </div>
         </div>
         <a class="play" onclick="toggleVideo()"><img src="imagens/play.png"> Assistir trailer</a>
@@ -49,6 +54,59 @@
         <video src="imagens/video.mp4" controls="true"></video>
         <img src="imagens/close.png" class="close" onclick="toggleVideo()">
     </div>  
+
+    <!--Catalogo da página principal-->
+     <br><br>
+    <div class="container">
+        <h2>Filmes</h2>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/Filmes/Img/Com amor, Simon - 2018 Comédia dramática_ Despretenciosa e divertida__resized_resized.jpeg" class="img-fluid" alt="...">
+                </div>
+    
+                <div class="col-md-3">
+                    <img src="/Filmes/Img/OLarDasCrianças_resized_resized.jpeg" class="img-fluid" alt="...">
+                </div>
+    
+                <div class="col-md-3">
+                    <img src="/Filmes/Img/DetonaRalph_resized_resized.jpeg" class="img-fluid" alt="...">
+                </div>
+    
+                <div class="col-md-3">
+                    <img src="/Filmes/Img/Lucy_resized_resized.jpg" class="img-fluid" alt="...">
+                </div>
+
+                <br><br>
+                <div class="container">
+                    <br><br>
+                    <h2>Séries</h2>
+                   
+                    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img src="/Séries/img/bomlugar_resized.jpeg" class="img-fluid" alt="...">
+                            </div>
+                
+                            <div class="col-md-3">
+                                <img src="/Séries/img/strangerthings_resized.jpeg" class="img-fluid" alt="...">
+                            </div>
+                
+                            <div class="col-md-3">
+                                <img src="/Séries/img/supernatural_resized.jpeg" class="img-fluid" alt="...">
+                            </div>
+                
+                            <div class="col-md-3">
+                                <img src="/Séries/img/Wandinha_resized.jpeg" class="img-fluid" alt="...">
+                            </div>
+
+            
+    
+
+    
+
 </body>
 <script src="javascript.js"></script>
 </html>

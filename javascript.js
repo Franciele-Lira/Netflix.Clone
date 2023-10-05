@@ -1,4 +1,4 @@
-alert('Olá bem-vindo(a)! Está página é apenas para um portfólio.')
+alert('Olá bem-vindo(a)! Está página é apenas para um portfólio.') //Caixinha de Span 
 
 
 function toggleVideo() { /* Funções do trailer */
@@ -7,7 +7,7 @@ function toggleVideo() { /* Funções do trailer */
     trailer.classList.toggle('active');
 
     video.currentTime = 0;
-    video.pause();
+    video.pause(); 
 }
 
 
